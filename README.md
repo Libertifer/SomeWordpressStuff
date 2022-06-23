@@ -1,2 +1,2 @@
 # SomeWordpressStuff
-Some Wordpress stuff
+Some Wordpress stuff I made for a job I didn't get.
