@@ -1,0 +1,190 @@
+/*
+Theme Name: Tema
+Theme URI:
+Description: Esta es una descripcion del tema Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, recusandae, officia fuga labore dolor mollitia voluptate beatae magnam aliquam quaerat accusantium harum odit magni ut at aspernatur incidunt possimus obcaecati.
+Version: 1.0
+Author:
+Author URI:
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain:
+*/
+
+@keyframes boton-hover {
+  from {
+    filter: saturate(100%);
+  }
+  to {
+    filter: saturate(200%);
+  }
+}
+@keyframes rrss-hover {
+  from {
+    color: #fff;
+  }
+  to {
+    color: #df282b;
+  }
+}
+
+.wp-image-34 {
+  margin-left: 12px;
+  width:96px;
+  height:39px;
+}
+.wp-image-35,.wp-image-36,.wp-image-37 {
+  width:24px;
+  height:24px;
+}
+.wp-block-social-link-anchor > svg {
+    height: 100%;
+    width: 100%;
+}
+nav > ul > li {
+  height: 100%;
+  margin: 0px 4px;
+}
+.titulo{
+  margin: 0;
+  height:0;
+  font-size: 0px;
+  color: red;
+}
+.parrafo{
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+}
+.custom-logo{
+  position: fixed;
+  z-index: 10;
+  top:0;
+  left:0;
+}
+.rrss{
+  margin-right:12px;
+  margin-top:16px;
+  display:flex;
+  list-style-type: none;
+  position:absolute;
+  z-index: 12;
+  top:0px;
+  right:0px;
+  height: 32px;
+}
+.tabla{
+  margin:0;
+  padding:16px 4px;
+  background-color: #272727;
+  position:relative;
+  z-index:4;
+}
+.tabla > table {
+  font-size: 15px;
+  width:100%;
+}
+.tabla > table > tbody > tr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tabla > table > tbody > tr > td {
+  display: flex;
+  align-items: center;
+  flex-basis: 25%;
+  justify-content: center;
+}
+#descripcion {
+  width: 359px;
+  height: 338px;
+  background-color: #c5a47e;
+  position: relative;
+  padding: 16px 32px;
+  margin: 16px -64px 16px 0px;
+}
+#div-descripcion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+nav > ul > li > a{
+  color: #fff;
+  text-decoration-line: none;
+}
+nav > ul > li > a:hover{
+  animation: rrss-hover .5s 1;
+  color: #df282b;
+  text-decoration-line: none;
+}
+header {
+  background-image:url('/wordpress/wp-content/uploads/2021/08/bosques-de-casanova-fachada.jpg');
+  height:500px;
+  background-size:cover;
+  background-position:center center;
+  position: relative;
+  z-index: 3;
+}
+nav > ul {
+  display: flex;
+  list-style-type: none;
+  position: fixed;
+  color: #FFF;
+  margin: 16px;
+  z-index: 11;
+  align-items: center;
+  right: 0;
+  height: 32px;
+  font-size:20px;
+}
+sup {
+  font-size: 14px;
+}
+body {
+  background-color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+i {
+  color: #fff;
+}
+i:hover{
+  animation: rrss-hover .5s 1;
+  color: #df282b;
+}
+input[type="text"]:focus, textarea:focus, input[type="button"]:hover, button:hover{
+  animation: boton-hover .5s 1;
+  filter: saturate(200%);
+}
+input:disabled, button:disabled{
+  filter: brightness(200%);
+}
+.pointer:hover {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1218px) {
+  #descripcion {
+    padding: 8px;
+  }
+  #descripcion > h4 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1022px) {
+  #div-descripcion {
+    flex-direction:column-reverse;
+  }
+  #descripcion {
+    margin: -64px 16px 0px 16px;
+  }
+}
+@media screen and (max-width: 880px) {
+  #div-descripcion {
+    flex-direction:column-reverse;
+  }
+  #descripcion {
+    margin: -64px 16px 0px 16px;
+  }
+}
